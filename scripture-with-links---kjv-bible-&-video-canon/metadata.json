@@ -1,0 +1,8 @@
+{
+  "name": "Scripture With Links - KJV Bible \u0026 Video Canon",
+  "description": "A scholarly social platform linking YouTube video expositions to the KJV Bible with verse-density mapping, video archive, and WhatsApp-style discussion spaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

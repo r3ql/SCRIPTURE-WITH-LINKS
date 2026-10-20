@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="50%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#292524" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+  
+  <!-- Background with subtle squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Outer Sacred Border -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="#b45309" stroke-width="3" stroke-opacity="0.35" />
+  
+  <!-- Inner Radiant Seal -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.6" stroke-dasharray="8 6" />
+
+  <!-- Sacred Open Bible Base -->
+  <g filter="url(#shadow)" transform="translate(96, 140)">
+    <!-- Book Pages Spine & Spread -->
+    <path d="M 160 210 C 105 185 45 190 10 205 L 10 50 C 50 35 110 32 160 55 C 210 32 270 35 310 50 L 310 205 C 275 190 215 185 160 210 Z" fill="#fffbeb" stroke="#78350f" stroke-width="5" />
+    
+    <!-- Spine Center Divider -->
+    <path d="M 160 55 L 160 210" stroke="#b45309" stroke-width="4" />
+    
+    <!-- Page text lines (representing KJV scripture text) -->
+    <line x1="45" y1="80" x2="130" y2="70" stroke="#a16207" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.8" />
+    <line x1="45" y1="105" x2="130" y2="95" stroke="#a16207" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.8" />
+    <line x1="45" y1="130" x2="130" y2="120" stroke="#a16207" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.8" />
+    <line x1="45" y1="155" x2="120" y2="147" stroke="#a16207" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.8" />
+
+    <line x1="190" y1="70" x2="275" y2="80" stroke="#a16207" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.8" />
+    <line x1="190" y1="95" x2="275" y2="105" stroke="#a16207" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.8" />
+    <line x1="190" y1="120" x2="275" y2="130" stroke="#a16207" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.8" />
+    <line x1="190" y1="147" x2="265" y2="155" stroke="#a16207" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.8" />
+  </g>
+
+  <!-- Golden Link / Chain Emblems rising from Scripture (Scripture with Links) -->
+  <g transform="translate(256, 150)" filter="url(#shadow)">
+    <!-- Cross Beam Crown -->
+    <path d="M 0 -75 L 0 -15" stroke="url(#goldGrad)" stroke-width="9" stroke-linecap="round" />
+    <path d="M -22 -52 L 22 -52" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- Modern Link Rings intertwining -->
+    <rect x="-42" y="-12" width="40" height="24" rx="12" fill="none" stroke="url(#goldGrad)" stroke-width="6" />
+    <rect x="2" y="-12" width="40" height="24" rx="12" fill="none" stroke="#f59e0b" stroke-width="6" />
+  </g>
+
+  <!-- Sacred Wordmark Ribbon -->
+  <text x="256" y="420" font-family="'Cinzel', serif, Georgia" font-size="28" font-weight="bold" fill="#fef3c7" text-anchor="middle" letter-spacing="4">
+    SCRIPTURE WITH LINKS
+  </text>
+  <text x="256" y="450" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle" letter-spacing="2">
+    THEOLOGICAL CANON NETWORK
+  </text>
+</svg>
